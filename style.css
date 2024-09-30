@@ -1,0 +1,101 @@
+/* General body styles */
+/*
+- set the font for the entire page to Arial
+- Apply a light blue background color
+- remove margins 
+- center content in page
+*/
+
+body 
+{
+    font-family: Arial;
+    background-color: #abd3f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+/*
+- Center text inside container 
+- Give container white background 
+- add padding and round corners
+*/
+
+.container 
+{
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Header styles */
+/*
+- change the text color to a black/gray hue
+- add space between header an dfollowing paragrapgh 
+*/
+
+h1 
+{
+    color: #202020;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
+/* 
+- change font size 
+- change text color to gray 
+*/
+
+p 
+{
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Form and input styles */
+/* 
+- add space above the form for better seperation and usability with touchscreens
+- add space below input field 
+*/
+
+form 
+{
+    margin-top: 1rem;
+}
+
+input 
+{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+/* Button styles */
+/*
+- add padding and set text size for a reasonable button size
+- set background color of button to be a darker blue adn text color to white 
+- round corners and remove border 
+*/
+button 
+{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+
+}
+
+button:hover 
+{
+    background-color: #0056b3;
+}

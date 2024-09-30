@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Check Tomorrow's Weather</h1>
+        <p>Enter the city of your location to find out if it will rain or snow tomorrow, as well as the expected wind speed!</p>
+
+        <!-- Input Form -->
+        <form action="/forecast" method="POST">
+            <input type="text" name="location" placeholder="Enter city name" required>
+            <br>
+            <button type="submit">Get Forecast</button>
+        </form>
+
+        <!-- Optional Error Handling (in case the API request fails) -->
+        <% if (typeof error !== 'undefined') { %>
+            <p class="error-message"><%= error %></p>
+        <% } %>
+    </div>
+</body>
+</html>
